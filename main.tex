@@ -36,12 +36,12 @@ top=0.7in
 \usepackage{mathrsfs}
 
 \theoremstyle{definition}
-\newtheorem{theorem}{Theorem}[section]
+\newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem*{corollary}{Corollary}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{pproposition}[theorem]{Proposition}
-\newtheorem{exercise}{Exercise}[section]
+\newtheorem{exercise}[theorem]{Exercise}
 \newtheorem{problem}{Problem}[section]
 \newtheorem*{proposition}{Proposition}
 \newtheorem*{solution}{Solution}
@@ -58,8 +58,8 @@ top=0.7in
 	\maketitle
 	\tableofcontents
 	\mainmatter
-%	\input{chapters/chapter-1.tex}
-%	\input{chapters/chapter-2.tex}
+	\setcounter{chapter}{1}
+	\input{chapters/chapter-2.tex}
 %	\input{chapters/chapter-3.tex}
 %	\input{chapters/chapter-4.tex}
 %	\input{chapters/chapter-5.tex}
@@ -69,9 +69,8 @@ top=0.7in
 %	\input{chapters/chapter-8.tex}
 %	\input{chapters/chapter-9.tex}
 %	\input{chapters/chapter-10.tex}
-%	\appendix
-%	\input{chapters/appendix-2.tex}
-%	\input{chapters/appendix-3.tex}
+	\appendix
+	\input{chapters/appendix-A.tex}
 	\backmatter
 	\printbibliography[heading=bibintoc]
 %	\printglossaries
